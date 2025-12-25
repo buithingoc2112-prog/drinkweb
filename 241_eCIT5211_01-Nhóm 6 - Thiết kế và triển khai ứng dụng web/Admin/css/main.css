@@ -1,0 +1,447 @@
+body {
+    background-color: #f5f7fa;
+  }
+  
+  .btn-primary {
+    background-color: #003471;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #003366;
+    color: #fff;
+    height: 60px;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-text i {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+/*Thanh menu*/
+
+  .custom-menu {
+    background-color: #f8f9fa; /* Màu nền sáng cho thanh menu */
+    padding: 20px 10px; /* Khoảng cách giữa viền và nội dung */
+    border-right: 1px solid #ddd; /* Viền phải để phân cách */
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Đảm bảo các mục menu sẽ xếp theo chiều dọc */
+    align-items: flex-start; /* Căn lề trái cho thanh menu */
+}
+
+.custom-menu h4 {
+    color: #003366; /* Màu chữ cho tiêu đề */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Viết hoa tiêu đề */
+}
+
+.custom-menu nav {
+    display: flex;
+    flex-direction: column; /* Đảm bảo các mục menu xếp theo chiều dọc */
+    align-items: flex-start; /* Căn lề trái cho các mục menu */
+    gap: 10px; /* Khoảng cách giữa các mục menu */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của menu */
+}
+
+.custom-menu .nav-link {
+    display: inline-block; /* Mỗi mục menu chiếm một phần riêng */
+    color: #003366; /* Màu chữ */
+    font-weight: 600; /* Làm đậm chữ */
+    padding: 10px 20px; /* Khoảng cách trong mỗi mục menu */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 5px; /* Bo góc các mục menu */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của menu */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.custom-menu .nav-link:hover {
+    background-color: #e6f0ff; /* Màu nền khi hover */
+    color: #003366; /* Đổi màu chữ khi hover */
+}
+
+.custom-menu .nav-link.active {
+    background-color: #003366; /* Màu nền của mục đang được chọn */
+    color: white; /* Màu chữ của mục đang được chọn */
+}
+
+.custom-menu .nav-link:focus {
+    outline: none; /* Xóa viền khi focus */
+}
+  /* Main Content */
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .content-header h2 {
+    font-weight: bold;
+    color: #3b3b3b;
+  }
+  .search-bar {
+    max-width: 400px;
+  }
+  .table-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .table th {
+    color: #3b3b3b;
+  }
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  
+  /* Product Item */
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+  .product-name {
+    font-weight: 500;
+  }
+  .percentage {
+    font-weight: 500;
+    color: #2b4d9e;
+  }
+  .progress {
+    height: 6px;
+    background-color: #e9ecef;
+  }
+  .progress-bar {
+    background-color: #003171;
+  }
+  
+  /* Status Badge */
+  .status-badge {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    border-radius: 15px;
+  }
+  .status-available {
+    background-color: #d1f2eb;
+    color: #1abc9c;
+  }
+  .status-out {
+    background-color: #fde2e2;
+    color: #e74c3c;
+  }
+  
+  /* Custom Table */
+  .custom-table {
+    background-color: #f9f9f9;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .custom-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .custom-table td {
+    font-size: 16px;
+    color: #333;
+  }
+  .custom-table th,
+  .custom-table td {
+    border: none;
+    padding: 15px;
+  }
+  .custom-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  .custom-table tbody tr td:nth-child(5) {
+    font-weight: bold;
+    color: #28a745;
+  }
+  .custom-table th:first-child,
+  .custom-table td:first-child {
+    text-align: left;
+  }
+  
+  /* Table Borders */
+  .table-bordered > :not(caption) > * > * {
+    border-width: 0px;
+  }
+  
+  
+  
+  /* Trang đơn hàng */
+  main h1 {
+    color: #003366;
+    margin: 2rem 0;
+  }
+  
+  /* Bảng đơn hàng */
+  .table-container .table th {
+    color: #64748b;
+  }
+  
+  .table-container .table td {
+    font-weight: 500;
+    color: #94a3b8;
+  }
+  
+  /* Trạng thái đơn hàng */
+  .status-preparing {
+    color: #e6792a;
+    padding: 5px;
+    background: #fdf1e8;
+    border-radius: 10px;
+  }
+  
+  .status-shipping {
+    color: #0d894f;
+    padding: 5px;
+    background: #e7f4ee;
+    border-radius: 10px;
+  }
+  
+  .status-delivered {
+    color: #29b9e6;
+    padding: 5px;
+    background: #e8f8fd;
+    border-radius: 10px;
+  }
+  
+  .status-canceled {
+    color: #f01d1d;
+    padding: 5px;
+    background: #e8f8fd;
+    border-radius: 10px;
+  }
+  
+  /* Nút chỉnh sửa */
+  .btn-light {
+    color: #94a3b8;
+  }
+  
+  .btn-light i {
+    color: #94a3b8;
+  }
+  
+  /* Nút thêm đơn hàng */
+  .add-order-btn {
+    font-weight: 600;
+    background-color: #003366;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-order-btn:hover {
+    background-color: #002244;
+  }
+  
+  
+  /* Namespace CSS cho trang báo cáo */
+  .report-page h1 {
+    color: #000000;
+    margin: 2rem 0;
+  }
+  
+  .report-page .card-stat {
+    display: flex;
+    border-radius: 6px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-page .card-stat.bg-primary {
+    background: #003471;
+    color: white;
+  }
+  
+  .report-page .card-stat.bg-white {
+    background: white;
+    color: #003471;
+  }
+  
+  .report-page .card-stat h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .report-page .card-stat .value {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  
+  .report-page .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .report-page .table thead th {
+    background: #f8f9fa;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .report-page .table tbody td {
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .report-page .table tbody td.fw-bold {
+    color: #94a3b8;
+    font-weight: 700;
+  }
+  
+  .report-page .btn-create-report {
+    color: #fff;
+    font-weight: 700;
+    background: #023672;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .report-page .btn-create-report:hover {
+    background: #001f47;
+  }
+  
+  
+  /* Trang sản phẩm */
+  .product-page h1 {
+    color: #003366;
+    margin: 2rem 0;
+  }
+  
+  /* Bảng sản phẩm */
+  .product-page .table th {
+    color: #64748b;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .product-page .table td {
+    font-weight: 500;
+  }
+  
+  .product-page .table td:nth-child(2) {
+    font-weight: 700; /* Tên sản phẩm */
+  }
+  
+  /* Nhãn trạng thái */
+  .status-badge {
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Trạng thái "Còn hàng" */
+  .status-available {
+    color: #0d894f;
+    background-color: #e7f4ee;
+  }
+  
+  /* Trạng thái "Hết hàng" */
+  .status-out {
+    color: #f01d1d;
+    background-color: #fde9e9;
+  }
+  
+  /* Nút chỉnh sửa và xóa */
+  .product-page .btn-light {
+    color: #94a3b8;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .product-page .btn-light:hover {
+    color: #003366;
+  }
+  
+  /* Nút thêm sản phẩm */
+  .product-page .btn-add-product {
+    font-weight: 600;
+    background-color: #003366;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-page .btn-add-product:hover {
+    background-color: #002244;
+  }
+  /* Trang quản lý tài khoản */
+  .account-page h1 {
+    color: #003366;
+    margin: 2rem 0;
+  }
+  
+  /* Bảng tài khoản */
+  .account-page .table th {
+    color: #64748b;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .account-page .table td {
+    font-weight: 500;
+  }
+  
+  /* Nút hành động */
+  .account-page .btn-light {
+    color: #94a3b8;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .account-page .btn-light:hover {
+    color: #003366;
+  }
+  
+  /* Nút thêm tài khoản */
+  .account-page .btn-add-account {
+    background-color: #003366;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .account-page .btn-add-account:hover {
+    background-color: #002244;
+  }
+  
